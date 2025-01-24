@@ -1,0 +1,406 @@
+EIGENVECTOR CENTRALITY
+--------------------------------------------------------------------------------
+
+Input dataset:                          sna-matrix (C:\Users\samet\Desktop\YL Veri Analitiği\2. Dönem\Sosyal Ağ Analizi\sna-matrix
+Output centrality scores:               sna-matrix-eig (C:\Users\samet\Documents\UCINET data\sna-matrix-eig
+Output eigenvalues:                     sna-matrix-eigval (C:\Users\samet\Documents\UCINET data\sna-matrix-eigval
+
+Important note: This routine automatically symmetrizes by maximum.
+
+Positive eigenvalues of sna-matrix
+
+                              1                    2                    3 
+                     Eigenvalue         Pct Variance              Cum Pct 
+           -------------------- -------------------- -------------------- 
+         1               23.113                7.314                7.314 
+         2               18.137                5.740               13.054 
+         3               15.144                4.792               17.846 
+         4               11.043                3.494               21.341 
+         5                9.262                2.931               24.271 
+         6                8.363                2.647               26.918 
+         7                7.675                2.429               29.347 
+         8                7.419                2.348               31.695 
+         9                7.033                2.226               33.920 
+        10                6.547                2.072               35.992 
+        11                6.165                1.951               37.943 
+        12                5.324                1.685               39.628 
+        13                5.219                1.652               41.279 
+        14                5.026                1.591               42.870 
+        15                4.685                1.482               44.352 
+        16                4.565                1.445               45.797 
+        17                4.398                1.392               47.189 
+        18                4.304                1.362               48.551 
+        19                4.200                1.329               49.880 
+        20                4.130                1.307               51.187 
+        21                3.947                1.249               52.436 
+        22                3.862                1.222               53.658 
+        23                3.774                1.194               54.852 
+        24                3.593                1.137               55.989 
+        25                3.574                1.131               57.120 
+        26                3.431                1.086               58.206 
+        27                3.184                1.008               59.214 
+        28                3.144                0.995               60.208 
+        29                3.113                0.985               61.194 
+        30                2.999                0.949               62.143 
+        31                2.989                0.946               63.088 
+        32                2.930                0.927               64.016 
+        33                2.842                0.899               64.915 
+        34                2.811                0.889               65.804 
+        35                2.788                0.882               66.687 
+        36                2.711                0.858               67.544 
+        37                2.671                0.845               68.390 
+        38                2.589                0.819               69.209 
+        39                2.548                0.806               70.015 
+        40                2.482                0.785               70.801 
+        41                2.421                0.766               71.567 
+        42                2.390                0.756               72.323 
+        43                2.295                0.726               73.049 
+        44                2.275                0.720               73.769 
+        45                2.225                0.704               74.474 
+        46                2.207                0.698               75.172 
+        47                2.163                0.685               75.857 
+        48                2.145                0.679               76.535 
+        49                2.116                0.669               77.205 
+        50                2.035                0.644               77.849 
+        51                2.026                0.641               78.490 
+        52                1.933                0.612               79.101 
+        53                1.886                0.597               79.698 
+        54                1.854                0.587               80.285 
+        55                1.829                0.579               80.864 
+        56                1.785                0.565               81.428 
+        57                1.757                0.556               81.984 
+        58                1.727                0.546               82.531 
+        59                1.712                0.542               83.072 
+        60                1.688                0.534               83.607 
+        61                1.639                0.519               84.125 
+        62                1.589                0.503               84.628 
+        63                1.568                0.496               85.124 
+        64                1.552                0.491               85.615 
+        65                1.538                0.487               86.102 
+        66                1.498                0.474               86.576 
+        67                1.465                0.464               87.039 
+        68                1.441                0.456               87.495 
+        69                1.427                0.452               87.947 
+        70                1.397                0.442               88.389 
+        71                1.356                0.429               88.818 
+        72                1.350                0.427               89.245 
+        73                1.331                0.421               89.667 
+        74                1.302                0.412               90.079 
+        75                1.260                0.399               90.477 
+        76                1.239                0.392               90.869 
+        77                1.224                0.387               91.257 
+        78                1.221                0.386               91.643 
+        79                1.194                0.378               92.021 
+        80                1.147                0.363               92.384 
+        81                1.140                0.361               92.745 
+        82                1.124                0.356               93.100 
+        83                1.089                0.345               93.445 
+        84                1.053                0.333               93.778 
+        85                1.039                0.329               94.107 
+        86                1.025                0.324               94.431 
+        87                1.014                0.321               94.752 
+        88                0.996                0.315               95.067 
+        89                0.955                0.302               95.370 
+        90                0.945                0.299               95.669 
+        91                0.916                0.290               95.958 
+        92                0.868                0.275               96.233 
+        93                0.834                0.264               96.497 
+        94                0.823                0.260               96.757 
+        95                0.781                0.247               97.004 
+        96                0.757                0.240               97.244 
+        97                0.737                0.233               97.477 
+        98                0.701                0.222               97.699 
+        99                0.674                0.213               97.912 
+       100                0.594                0.188               98.100 
+       101                0.575                0.182               98.282 
+       102                0.552                0.175               98.457 
+       103                0.527                0.167               98.624 
+       104                0.491                0.155               98.779 
+       105                0.463                0.147               98.926 
+       106                0.446                0.141               99.067 
+       107                0.411                0.130               99.197 
+       108                0.387                0.122               99.319 
+       109                0.378                0.120               99.439 
+       110                0.292                0.092               99.531 
+       111                0.284                0.090               99.621 
+       112                0.251                0.079               99.701 
+       113                0.231                0.073               99.774 
+       114                0.195                0.062               99.836 
+       115                0.140                0.044               99.880 
+       116                0.139                0.044               99.924 
+       117                0.106                0.034               99.957 
+       118                0.089                0.028               99.985 
+       119                0.046                0.015                  100 
+       120                0.000                0.000                  100 
+       121                0.000                0.000                  100 
+       122                0.000                0.000                  100 
+       123                0.000                0.000                  100 
+       124                0.000                0.000                  100 
+       125                0.000                0.000                  100 
+       126                0.000                0.000                  100 
+       127                0.000                0.000                  100 
+       128                0.000                0.000                  100 
+       129                0.000                0.000                  100 
+       130                0.000                0.000                  100 
+
+130 rows, 3 columns, 1 levels.
+
+Eigenvectors of sna-matrix
+
+                                                1 
+                                      Eigenvector 
+                             -------------------- 
+     1                Aegnor                0.036 
+     2                Alatar                0.030 
+     3          Tar-Aldarion                0.005 
+     4                 Amdir                0.001 
+     5                 Amras                0.043 
+     6                 Amrod                0.043 
+     7                Amroth                0.000 
+     8                Anaire                0.014 
+     9               Anarion                0.002 
+    10                Anborn                0.002 
+    11             Ancalagon                0.018 
+    12                Angbor                0.002 
+    13                Angrod                0.020 
+    14            Aragorn-II                0.052 
+    15                Aratan                0.001 
+    16           Arathorn-II                0.006 
+    17               Aredhel                0.021 
+    18                 Argon                0.013 
+    19                 Arien                0.017 
+    20                 Arwen                0.028 
+    21                  Aule                0.198 
+    22               Azaghal                0.003 
+    23                  Azog                0.000 
+    24         Bilbo-Baggins                0.033 
+    25         Frodo-Baggins                0.042 
+    26                 Balin                0.018 
+    27              Baragund                0.001 
+    28               Barahir                0.005 
+    29                 Baran                0.000 
+    30       Bard-the-Bowman                0.003 
+    31                 Beleg                0.015 
+    32              Belegund                0.001 
+    33                  Beor                0.006 
+    34                 Beorn                0.017 
+    35                 Beren                0.045 
+    36                 Bifur                0.016 
+    37                 Bofur                0.016 
+    38                  Bolg                0.000 
+    39       Fredegar-Bolger                0.008 
+    40                Bombur                0.016 
+    41                   Bor                0.002 
+    42                 Borin                0.000 
+    43               Boromir                0.032 
+    44                 Brand                0.000 
+    45               Brandir                0.001 
+    46   Meriadoc-Brandybuck                0.035 
+    47              Bregolas                0.003 
+    48                Brodda                0.000 
+    49    Barliman-Butterbur                0.015 
+    50             Caranthir                0.043 
+    51            Carcharoth                0.020 
+    52              Celeborn                0.029 
+    53             Celebrian                0.006 
+    54           Celebrimbor                0.035 
+    55              Celegorm                0.057 
+    56                Cirdan                0.081 
+    57          Tar-Ciryatan                0.000 
+    58                Ciryon                0.001 
+    59           Rose-Cotton                0.002 
+    60               Curufin                0.052 
+    61      Dain-II-Ironfoot                0.002 
+    62                Deagol                0.001 
+    63           Denethor-II                0.021 
+    64                  Dior                0.018 
+    65                  Dori                0.016 
+    66                Dorlas                0.000 
+    67             Draugluin                0.025 
+    68                Duilin                0.001 
+    69                 Durin                0.009 
+    70              Durin-VI                0.002 
+    71          Durin's-Bane                0.043 
+    72                Dwalin                0.016 
+    73              Earendil                0.148 
+    74                Earwen                0.019 
+    75             Ecthelion                0.016 
+    76              Eiliniel                0.009 
+    77              Eldarion                0.004 
+    78             Elemmakil                0.003 
+    79               Elendil                0.017 
+    80               Elendur                0.001 
+    81                Elenwe                0.002 
+    82               Elladan                0.007 
+    83                  Elmo                0.003 
+    84               Elrohir                0.007 
+    85                Elrond                0.063 
+    86                 Elros                0.023 
+    87                Elwing                0.021 
+    88                   Eol                0.004 
+    89                 Eomer                0.015 
+    90                 Eonwe                0.200 
+    91               Eothain                0.001 
+    92                 Eowyn                0.016 
+    93            Erkenbrand                0.006 
+    94          Eru-Iluvatar                0.169 
+    95                  Este                0.198 
+    96               Faramir                0.015 
+    97                Feanor                0.213 
+    98            Bill-Ferny                0.002 
+    99                  Fili                0.016 
+   100              Finarfin                0.202 
+   101                Findis                0.039 
+   102             Finduilas                0.002 
+   103             Fingolfin                0.205 
+   104                Fingon                0.026 
+   105       Finrod-Felagund                0.044 
+   106                 Finwe                0.180 
+   107             Galadriel                0.079 
+   108    Galdor-of-Gondolin                0.003 
+   109        Samwise-Gamgee                0.034 
+   110               Gamling                0.000 
+   111               Gandalf                0.105 
+   112             Gil-galad                0.024 
+   113      Gildor-Inglorion                0.027 
+   114                 Gimli                0.030 
+   115              Glaurung                0.011 
+   116                 Gloin                0.023 
+   117            Glorfindel                0.041 
+   118             Goldberry                0.007 
+   119                Gollum                0.023 
+   120                Gorlim                0.001 
+   121               Gothmog                0.029 
+   122              Grimbold                0.002 
+   123               Gwaihir                0.018 
+   124               Gwindor                0.001 
+   125                 Hador                0.009 
+   126      Haldir-of-Lorien                0.016 
+   127                Haleth                0.002 
+   128                  Hama                0.013 
+   129               Herumor                0.009 
+   130                  Huan                0.042 
+   131                  Huor                0.005 
+   132                 Hurin                0.019 
+   133                 Idril                0.010 
+   134                Ilmare                0.027 
+   135               Imrahil                0.012 
+   136                 Indis                0.031 
+   137                 Ingwe                0.021 
+   138                 Irime                0.031 
+   139                  Irmo                0.202 
+   140               Isildur                0.017 
+   141                Khamul                0.010 
+   142                  Kili                0.016 
+   143               Legolas                0.029 
+   144               Luthien                0.045 
+   145               Mablung                0.020 
+   146              Maedhros                0.051 
+   147               Maeglin                0.016 
+   148                Maglor                0.046 
+   149                 Manwe                0.206 
+   150                Melian                0.049 
+   151              Meneldil                0.001 
+   152                   Mim                0.004 
+   153          Tar-Minastir                0.010 
+   154                Miriel                0.018 
+   155               Morgoth                0.206 
+   156                Morwen                0.007 
+   157                  Namo                0.199 
+   158                 Narvi                0.002 
+   159              Nerdanel                0.025 
+   160                 Nessa                0.196 
+   161                Nienna                0.200 
+   162                Nienor                0.003 
+   163                  Nori                0.011 
+   164                   Oin                0.011 
+   165                  Olwe                0.024 
+   166                   Ori                0.011 
+   167              Orodreth                0.006 
+   168                 Orome                0.205 
+   169               Oropher                0.002 
+   170                  Osse                0.023 
+   171              Pallando                0.030 
+   172          Tar-Palantir                0.000 
+   173           Ar-Pharazon                0.001 
+   174              Radagast                0.030 
+   175                  Rian                0.002 
+   176                 Sador                0.002 
+   177                Saeros                0.003 
+   178               Saruman                0.037 
+   179                Sauron                0.195 
+   180                Shelob                0.004 
+   181                 Smaug                0.011 
+   182               Theoden                0.016 
+   183              Theodred                0.002 
+   184               Thingol                0.041 
+   185 Thorin-II-Oakenshield                0.011 
+   186             Thorondor                0.037 
+   187             Thrain-II                0.006 
+   188             Thranduil                0.020 
+   189                 Thror                0.000 
+   190                Tilion                0.009 
+   191          Tom-Bombadil                0.024 
+   192         Peregrin-Took                0.030 
+   193             Treebeard                0.005 
+   194                Tulkas                0.196 
+   195                  Tuor                0.022 
+   196                Turgon                0.028 
+   197                 Turin                0.006 
+   198                 Uinen                0.010 
+   199                  Ulmo                0.207 
+   200             Ungoliant                0.009 
+   201                 Urwen                0.001 
+   202                 Vaire                0.196 
+   203              Valandil                0.001 
+   204                  Vana                0.198 
+   205                 Varda                0.201 
+   206               Voronwe                0.003 
+   207  Witch-King-of-Angmar                0.016 
+   208            Wormtongue                0.016 
+   209               Yavanna                0.199 
+
+209 rows, 1 columns, 1 levels.
+
+Descriptive Statistics
+
+                                                   1 
+                                         Eigenvector 
+                                -------------------- 
+     1                  Minimum                0.000 
+     2                  Average                0.037 
+     3                  Maximum                0.213 
+     4                      Sum                7.661 
+     5       Standard Deviation                0.059 
+     6                 Variance                0.003 
+     7                      SSQ                    1 
+     8                    MCSSQ                0.719 
+     9           Euclidean Norm                    1 
+    10             Observations                  209 
+    11                  Missing                    0 
+    12     Std. Deviation (n-1)                0.059 
+    13           Variance (n-1)                0.003 
+    14            Binary valued                    0 
+    15                Negatives                    0 
+    16           Integer valued                    0 
+    17             Weighted Obs                  209 
+    18                Positives                  209 
+    19       Avg Positive Value                0.037 
+    20 Coefficient of Variation                1.600 
+
+20 rows, 1 columns, 1 levels.
+
+Eigenvector centralization percentages
+
+                                         1 
+                                sna_matrix 
+                      -------------------- 
+     1 Centralization               26.991 
+
+1 rows, 1 columns, 1 levels.
+
+
+--------------------------------------
+Running time: 00:00:01 seconds.
+Output generated: 24 Jan 25 22:27:23
+UCINET 6.800 Copyright (c) 2002-2023 Analytic Technologies

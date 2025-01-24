@@ -1,0 +1,251 @@
+FREEMAN BETWEENNESS CENTRALITY
+--------------------------------------------------------------------------------
+
+Input dataset:                          sna-matrix (C:\Users\samet\Desktop\YL Veri Analitiği\2. Dönem\Sosyal Ağ Analizi\sna-matrix
+
+
+
+Important note: This routine cannot handle valued data, so it binarizes your data automatically.
+                It DOES handle directed (non-symmetric) data, so it does NOT symmetrize.
+
+
+Un-normalized centralization: :         577047.190
+
+                                         1            2
+                               Betweenness             
+                              ------------ ------------
+  179                 Sauron      3046.819        7.076
+  149                  Manwe      2334.208        5.421
+  197                  Turin      2196.410        5.101
+  109         Samwise-Gamgee      2160.518        5.018
+  117             Glorfindel      1855.451        4.309
+  111                Gandalf      1709.704        3.971
+  103              Fingolfin      1650.942        3.834
+  157                   Namo      1570.029        3.646
+  155                Morgoth      1536.436        3.568
+  140                Isildur      1451.436        3.371
+  182                Theoden      1433.588        3.330
+  205                  Varda      1379.495        3.204
+  150                 Melian      1370.869        3.184
+  142                   Kili      1222.615        2.840
+  112              Gil-galad      1209.444        2.809
+  199                   Ulmo       993.367        2.307
+  166                    Ori       913.984        2.123
+  196                 Turgon       912.515        2.119
+  133                  Idril       858.753        1.995
+  100               Finarfin       851.952        1.979
+  102              Finduilas       808.231        1.877
+   14             Aragorn-II       785.017        1.823
+   21                   Aule       740.538        1.720
+  107              Galadriel       725.594        1.685
+  156                 Morwen       652.709        1.516
+  101                 Findis       617.476        1.434
+  174               Radagast       597.016        1.387
+  195                   Tuor       591.712        1.374
+   56                 Cirdan       588.528        1.367
+  189                  Thror       557.248        1.294
+  173            Ar-Pharazon       548.426        1.274
+  184                Thingol       536.531        1.246
+  106                  Finwe       516.756        1.200
+   46    Meriadoc-Brandybuck       515.736        1.198
+   73               Earendil       501.555        1.165
+    6                  Amrod       500.688        1.163
+    5                  Amras       500.688        1.163
+   31                  Beleg       486.491        1.130
+   25          Frodo-Baggins       483.980        1.124
+  168                  Orome       471.412        1.095
+  146               Maedhros       464.946        1.080
+  165                   Olwe       463.123        1.076
+  141                 Khamul       459.270        1.067
+   79                Elendil       436.088        1.013
+  132                  Hurin       435.678        1.012
+  105        Finrod-Felagund       421.441        0.979
+   13                 Angrod       415.371        0.965
+   54            Celebrimbor       370.261        0.860
+   45                Brandir       368.454        0.856
+   75              Ecthelion       360.398        0.837
+  206                Voronwe       357.681        0.831
+   22                Azaghal       327.585        0.761
+   50              Caranthir       309.370        0.719
+  126       Haldir-of-Lorien       303.144        0.704
+   37                  Bofur       284.439        0.661
+  145                Mablung       282.203        0.655
+  186              Thorondor       280.864        0.652
+   30        Bard-the-Bowman       275.602        0.640
+  147                Maeglin       248.249        0.577
+  204                   Vana       240.553        0.559
+  198                  Uinen       236.420        0.549
+  119                 Gollum       235.295        0.546
+  178                Saruman       233.700        0.543
+   93             Erkenbrand       230.175        0.535
+    9                Anarion       213.085        0.495
+  153           Tar-Minastir       206.000        0.478
+  188              Thranduil       203.773        0.473
+   89                  Eomer       200.690        0.466
+   24          Bilbo-Baggins       198.740        0.462
+   35                  Beren       193.566        0.450
+   60                Curufin       190.547        0.443
+   29                  Baran       190.190        0.442
+   52               Celeborn       186.780        0.434
+  144                Luthien       178.833        0.415
+   55               Celegorm       174.628        0.406
+  181                  Smaug       173.723        0.403
+   26                  Balin       172.711        0.401
+   38                   Bolg       166.565        0.387
+   32               Belegund       166.471        0.387
+   57           Tar-Ciryatan       156.822        0.364
+  118              Goldberry       156.360        0.363
+   66                 Dorlas       154.783        0.359
+  113       Gildor-Inglorion       151.803        0.353
+  125                  Hador       151.721        0.352
+    4                  Amdir       148.394        0.345
+   34                  Beorn       146.491        0.340
+  114                  Gimli       146.006        0.339
+   23                   Azog       144.064        0.335
+   27               Baragund       136.099        0.316
+   90                  Eonwe       134.689        0.313
+   51             Carcharoth       134.214        0.312
+  143                Legolas       131.233        0.305
+   78              Elemmakil       126.233        0.293
+   61       Dain-II-Ironfoot       126.049        0.293
+    2                 Alatar       125.508        0.291
+   72                 Dwalin       117.873        0.274
+   36                  Bifur       117.873        0.274
+   40                 Bombur       117.873        0.274
+   65                   Dori       117.873        0.274
+  104                 Fingon       117.439        0.273
+   17                Aredhel       116.496        0.271
+   62                 Deagol       116.402        0.270
+   53              Celebrian       114.732        0.266
+  139                   Irmo       110.882        0.258
+  115               Glaurung       107.068        0.249
+  192          Peregrin-Took       104.830        0.243
+   97                 Feanor       103.450        0.240
+   28                Barahir        97.700        0.227
+  209                Yavanna        93.152        0.216
+   42                  Borin        89.227        0.207
+   70               Durin-VI        87.948        0.204
+   69                  Durin        87.948        0.204
+  161                 Nienna        87.592        0.203
+   71           Durin's-Bane        85.850        0.199
+   74                 Earwen        82.939        0.193
+   64                   Dior        82.106        0.191
+   85                 Elrond        79.780        0.185
+  130                   Huan        74.581        0.173
+   43                Boromir        71.460        0.166
+   67              Draugluin        68.916        0.160
+   76               Eiliniel        67.729        0.157
+  180                 Shelob        67.487        0.157
+  148                 Maglor        66.482        0.154
+   48                 Brodda        65.852        0.153
+   20                  Arwen        59.662        0.139
+   18                  Argon        59.215        0.138
+    8                 Anaire        59.215        0.138
+   92                  Eowyn        57.032        0.132
+   11              Ancalagon        56.014        0.130
+  116                  Gloin        55.320        0.128
+   49     Barliman-Butterbur        55.105        0.128
+    1                 Aegnor        53.606        0.125
+   63            Denethor-II        52.489        0.122
+   58                 Ciryon        46.954        0.109
+   15                 Aratan        46.954        0.109
+   77               Eldarion        45.036        0.105
+  190                 Tilion        44.497        0.103
+   81                 Elenwe        44.254        0.103
+  167               Orodreth        39.437        0.092
+  162                 Nienor        39.047        0.091
+  134                 Ilmare        37.966        0.088
+   94           Eru-Iluvatar        37.589        0.087
+   83                   Elmo        31.428        0.073
+  175                   Rian        31.245        0.073
+  187              Thrain-II        29.156        0.068
+  200              Ungoliant        26.279        0.061
+  170                   Osse        25.892        0.060
+  131                   Huor        25.280        0.059
+   80                Elendur        23.887        0.055
+   95                   Este        23.594        0.055
+  207   Witch-King-of-Angmar        23.323        0.054
+  152                    Mim        23.313        0.054
+   19                  Arien        22.054        0.051
+  191           Tom-Bombadil        21.144        0.049
+  169                Oropher        20.358        0.047
+  137                  Ingwe        19.995        0.046
+   39        Fredegar-Bolger        19.534        0.045
+    3           Tar-Aldarion        19.501        0.045
+  171               Pallando        17.417        0.040
+   10                 Anborn        17.079        0.040
+   68                 Duilin        17.049        0.040
+  194                 Tulkas        16.088        0.037
+  160                  Nessa        16.088        0.037
+  123                Gwaihir        15.380        0.036
+  121                Gothmog        12.990        0.030
+   41                    Bor        12.484        0.029
+  185  Thorin-II-Oakenshield        12.094        0.028
+  202                  Vaire        11.518        0.027
+   33                   Beor        11.272        0.026
+  138                  Irime        10.290        0.024
+  136                  Indis         9.860        0.023
+   59            Rose-Cotton         9.461        0.022
+   86                  Elros         7.484        0.017
+   88                    Eol         7.033        0.016
+   87                 Elwing         6.992        0.016
+  124                Gwindor         6.057        0.014
+  208             Wormtongue         4.976        0.012
+  135                Imrahil         2.954        0.007
+   96                Faramir         2.697        0.006
+  128                   Hama         2.621        0.006
+  183               Theodred         1.000        0.002
+   98             Bill-Ferny         0.250        0.001
+   99                   Fili         0.000        0.000
+  110                Gamling         0.000        0.000
+  151               Meneldil         0.000        0.000
+   16            Arathorn-II         0.000        0.000
+  122               Grimbold         0.000        0.000
+    7                 Amroth         0.000        0.000
+  177                 Saeros         0.000        0.000
+  120                 Gorlim         0.000        0.000
+   84                Elrohir         0.000        0.000
+   47               Bregolas         0.000        0.000
+  193              Treebeard         0.000        0.000
+   12                 Angbor         0.000        0.000
+  163                   Nori         0.000        0.000
+  164                    Oin         0.000        0.000
+  159               Nerdanel         0.000        0.000
+  108     Galdor-of-Gondolin         0.000        0.000
+   82                Elladan         0.000        0.000
+   44                  Brand         0.000        0.000
+  201                  Urwen         0.000        0.000
+  176                  Sador         0.000        0.000
+  158                  Narvi         0.000        0.000
+  172           Tar-Palantir         0.000        0.000
+  127                 Haleth         0.000        0.000
+  154                 Miriel         0.000        0.000
+  129                Herumor         0.000        0.000
+   91                Eothain         0.000        0.000
+  203               Valandil         0.000        0.000
+
+
+DESCRIPTIVE STATISTICS FOR EACH MEASURE
+
+                            1            2
+                  Betweenness             
+                 ------------ ------------
+    1      Mean       285.828        0.664
+    2   Std Dev       475.214        1.104
+    3       Sum     59738.000      138.745
+    4  Variance    225828.469        1.218
+    5       SSQ  64272928.000      346.706
+    6     MCSSQ  47198152.000      254.600
+    7  Euc Norm      8017.040       18.620
+    8   Minimum         0.000        0.000
+    9   Maximum      3046.819        7.076
+   10  N of Obs       209.000      209.000
+
+Network Centralization Index = 6.44%
+
+Output actor-by-centrality measure matrix saved as dataset :sna-matrix-bet (C:\Users\samet\Documents\UCINET data\sna-matrix-bet
+
+--------------------------------------
+Running time: 00:00:01 seconds.
+Output generated: 24 Jan 25 16:22:23
+UCINET 6.800 Copyright (c) 2002-2023 Analytic Technologies

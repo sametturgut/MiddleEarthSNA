@@ -1,0 +1,248 @@
+FREEMAN DEGREE CENTRALITY
+--------------------------------------------------------------------------------
+
+Input dataset:                          sna-matrix (C:\Users\samet\Desktop\YL Veri Analitiği\2. Dönem\Sosyal Ağ Analizi\sna-matrix
+Output degree dataset:                  sna-matrix-deg (C:\Users\samet\Documents\UCINET data\sna-matrix-deg
+Output centralization dataset:          sna-matrix-degcz (C:\Users\samet\Documents\UCINET data\sna-matrix-degcz
+Treat data as:                          Undirected
+Output raw totals:                      YES
+Output averages (normalized):           YES
+Allow edge weights:                     YES
+Weighted normalization:                 YES
+Exclude diagonal:                       YES
+
+Degree Measures
+
+                                                1                    2 
+                                           Degree              nDegree 
+                             -------------------- -------------------- 
+    1                Aegnor                 8.000                0.038 
+    2                Alatar                 7.000                0.034 
+    3          Tar-Aldarion                 2.000                0.010 
+    4                 Amdir                 3.000                0.014 
+    5                 Amras                11.000                0.053 
+    6                 Amrod                11.000                0.053 
+    7                Amroth                 1.000                0.005 
+    8                Anaire                 6.000                0.029 
+    9               Anarion                 3.000                0.014 
+   10                Anborn                 2.000                0.010 
+   11             Ancalagon                 3.000                0.014 
+   12                Angbor                 1.000                0.005 
+   13                Angrod                 9.000                0.043 
+   14            Aragorn-II                36.000                0.173 
+   15                Aratan                 3.000                0.014 
+   16           Arathorn-II                 4.000                0.019 
+   17               Aredhel                11.000                0.053 
+   18                 Argon                 5.000                0.024 
+   19                 Arien                 2.000                0.010 
+   20                 Arwen                17.000                0.082 
+   21                  Aule                24.000                0.115 
+   22               Azaghal                 2.000                0.010 
+   23                  Azog                 4.000                0.019 
+   24         Bilbo-Baggins                26.000                0.125 
+   25         Frodo-Baggins                28.000                0.135 
+   26                 Balin                19.000                0.091 
+   27              Baragund                 4.000                0.019 
+   28               Barahir                 7.000                0.034 
+   29                 Baran                 1.000                0.005 
+   30       Bard-the-Bowman                 5.000                0.024 
+   31                 Beleg                11.000                0.053 
+   32              Belegund                 4.000                0.019 
+   33                  Beor                 4.000                0.019 
+   34                 Beorn                17.000                0.082 
+   35                 Beren                15.000                0.072 
+   36                 Bifur                16.000                0.077 
+   37                 Bofur                16.000                0.077 
+   38                  Bolg                 1.000                0.005 
+   39       Fredegar-Bolger                 5.000                0.024 
+   40                Bombur                16.000                0.077 
+   41                   Bor                 1.000                0.005 
+   42                 Borin                 1.000                0.005 
+   43               Boromir                17.000                0.082 
+   44                 Brand                 1.000                0.005 
+   45               Brandir                 4.000                0.019 
+   46   Meriadoc-Brandybuck                24.000                0.115 
+   47              Bregolas                 5.000                0.024 
+   48                Brodda                 1.000                0.005 
+   49    Barliman-Butterbur                 7.000                0.034 
+   50             Caranthir                12.000                0.058 
+   51            Carcharoth                 8.000                0.038 
+   52              Celeborn                17.000                0.082 
+   53             Celebrian                 5.000                0.024 
+   54           Celebrimbor                10.000                0.048 
+   55              Celegorm                15.000                0.072 
+   56                Cirdan                28.000                0.135 
+   57          Tar-Ciryatan                 1.000                0.005 
+   58                Ciryon                 3.000                0.014 
+   59           Rose-Cotton                 1.000                0.005 
+   60               Curufin                18.000                0.087 
+   61      Dain-II-Ironfoot                 6.000                0.029 
+   62                Deagol                 1.000                0.005 
+   63           Denethor-II                 7.000                0.034 
+   64                  Dior                 9.000                0.043 
+   65                  Dori                16.000                0.077 
+   66                Dorlas                 3.000                0.014 
+   67             Draugluin                 6.000                0.029 
+   68                Duilin                 1.000                0.005 
+   69                 Durin                 1.000                0.005 
+   70              Durin-VI                 1.000                0.005 
+   71          Durin's-Bane                13.000                0.063 
+   72                Dwalin                16.000                0.077 
+   73              Earendil                23.000                0.111 
+   74                Earwen                 7.000                0.034 
+   75             Ecthelion                 9.000                0.043 
+   76              Eiliniel                 2.000                0.010 
+   77              Eldarion                 2.000                0.010 
+   78             Elemmakil                 4.000                0.019 
+   79               Elendil                 7.000                0.034 
+   80               Elendur                 3.000                0.014 
+   81                Elenwe                 2.000                0.010 
+   82               Elladan                 6.000                0.029 
+   83                  Elmo                 2.000                0.010 
+   84               Elrohir                 6.000                0.029 
+   85                Elrond                33.000                0.159 
+   86                 Elros                 6.000                0.029 
+   87                Elwing                 5.000                0.024 
+   88                   Eol                 3.000                0.014 
+   89                 Eomer                14.000                0.067 
+   90                 Eonwe                25.000                0.120 
+   91               Eothain                 1.000                0.005 
+   92                 Eowyn                13.000                0.063 
+   93            Erkenbrand                 5.000                0.024 
+   94          Eru-Iluvatar                26.000                0.125 
+   95                  Este                23.000                0.111 
+   96               Faramir                10.000                0.048 
+   97                Feanor                37.000                0.178 
+   98            Bill-Ferny                 1.000                0.005 
+   99                  Fili                16.000                0.077 
+  100              Finarfin                34.000                0.163 
+  101                Findis                 6.000                0.029 
+  102             Finduilas                 5.000                0.024 
+  103             Fingolfin                39.000                0.188 
+  104                Fingon                11.000                0.053 
+  105       Finrod-Felagund                14.000                0.067 
+  106                 Finwe                24.000                0.115 
+  107             Galadriel                28.000                0.135 
+  108    Galdor-of-Gondolin                 3.000                0.014 
+  109        Samwise-Gamgee                23.000                0.111 
+  110               Gamling                 1.000                0.005 
+  111               Gandalf                49.000                0.236 
+  112             Gil-galad                15.000                0.072 
+  113      Gildor-Inglorion                12.000                0.058 
+  114                 Gimli                21.000                0.101 
+  115              Glaurung                 7.000                0.034 
+  116                 Gloin                20.000                0.096 
+  117            Glorfindel                19.000                0.091 
+  118             Goldberry                 5.000                0.024 
+  119                Gollum                10.000                0.048 
+  120                Gorlim                 3.000                0.014 
+  121               Gothmog                 6.000                0.029 
+  122              Grimbold                 3.000                0.014 
+  123               Gwaihir                 4.000                0.019 
+  124               Gwindor                 3.000                0.014 
+  125                 Hador                 1.000                0.005 
+  126      Haldir-of-Lorien                 9.000                0.043 
+  127                Haleth                 1.000                0.005 
+  128                  Hama                 8.000                0.038 
+  129               Herumor                 1.000                0.005 
+  130                  Huan                12.000                0.058 
+  131                  Huor                 5.000                0.024 
+  132                 Hurin                13.000                0.063 
+  133                 Idril                 5.000                0.024 
+  134                Ilmare                 3.000                0.014 
+  135               Imrahil                 7.000                0.034 
+  136                 Indis                 6.000                0.029 
+  137                 Ingwe                 4.000                0.019 
+  138                 Irime                 5.000                0.024 
+  139                  Irmo                24.000                0.115 
+  140               Isildur                11.000                0.053 
+  141                Khamul                 2.000                0.010 
+  142                  Kili                16.000                0.077 
+  143               Legolas                20.000                0.096 
+  144               Luthien                14.000                0.067 
+  145               Mablung                11.000                0.053 
+  146              Maedhros                19.000                0.091 
+  147               Maeglin                 7.000                0.034 
+  148                Maglor                12.000                0.058 
+  149                 Manwe                28.000                0.135 
+  150                Melian                13.000                0.063 
+  151              Meneldil                 2.000                0.010 
+  152                   Mim                 4.000                0.019 
+  153          Tar-Minastir                 3.000                0.014 
+  154                Miriel                 2.000                0.010 
+  155               Morgoth                36.000                0.173 
+  156                Morwen                13.000                0.063 
+  157                  Namo                24.000                0.115 
+  158                 Narvi                 1.000                0.005 
+  159              Nerdanel                 8.000                0.038 
+  160                 Nessa                22.000                0.106 
+  161                Nienna                23.000                0.111 
+  162                Nienor                 8.000                0.038 
+  163                  Nori                14.000                0.067 
+  164                   Oin                14.000                0.067 
+  165                  Olwe                 5.000                0.024 
+  166                   Ori                14.000                0.067 
+  167              Orodreth                 5.000                0.024 
+  168                 Orome                28.000                0.135 
+  169               Oropher                 3.000                0.014 
+  170                  Osse                 4.000                0.019 
+  171              Pallando                 7.000                0.034 
+  172          Tar-Palantir                 1.000                0.005 
+  173           Ar-Pharazon                 2.000                0.010 
+  174              Radagast                 8.000                0.038 
+  175                  Rian                 4.000                0.019 
+  176                 Sador                 4.000                0.019 
+  177                Saeros                 3.000                0.014 
+  178               Saruman                13.000                0.063 
+  179                Sauron                39.000                0.188 
+  180                Shelob                 3.000                0.014 
+  181                 Smaug                 3.000                0.014 
+  182               Theoden                13.000                0.063 
+  183              Theodred                 5.000                0.024 
+  184               Thingol                19.000                0.091 
+  185 Thorin-II-Oakenshield                15.000                0.072 
+  186             Thorondor                12.000                0.058 
+  187             Thrain-II                 5.000                0.024 
+  188             Thranduil                22.000                0.106 
+  189                 Thror                 3.000                0.014 
+  190                Tilion                 1.000                0.005 
+  191          Tom-Bombadil                11.000                0.053 
+  192         Peregrin-Took                21.000                0.101 
+  193             Treebeard                 4.000                0.019 
+  194                Tulkas                22.000                0.106 
+  195                  Tuor                13.000                0.063 
+  196                Turgon                21.000                0.101 
+  197                 Turin                16.000                0.077 
+  198                 Uinen                 2.000                0.010 
+  199                  Ulmo                30.000                0.144 
+  200             Ungoliant                 2.000                0.010 
+  201                 Urwen                 3.000                0.014 
+  202                 Vaire                22.000                0.106 
+  203              Valandil                 1.000                0.005 
+  204                  Vana                24.000                0.115 
+  205                 Varda                24.000                0.115 
+  206               Voronwe                 4.000                0.019 
+  207  Witch-King-of-Angmar                 6.000                0.029 
+  208            Wormtongue                 9.000                0.043 
+  209               Yavanna                24.000                0.115 
+
+
+209 rows, 2 columns, 1 levels.
+
+
+Graph Centralization -- as proportion, not percentage
+
+                       1 
+                  Centra 
+                  lizati 
+                      on 
+                  ------ 
+     1 sna_matrix 0.1864 
+
+1 rows, 1 columns, 1 levels.
+
+
+--------------------------------------
+Running time: 00:00:01 seconds.
+Output generated: 24 Jan 25 23:25:15
+UCINET 6.800 Copyright (c) 2002-2023 Analytic Technologies
